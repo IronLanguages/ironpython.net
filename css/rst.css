@@ -1,0 +1,296 @@
+pre.literal-block,
+tt.docutils.literal {
+  font-family: consolas, monaco, monospace;
+}
+pre.literal-block {
+  font-size: 12px;
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  display : block;
+  overflow : auto;
+}
+tt.literal {
+  font-size: 14px;
+  background-color: #ddd;
+  color: black;
+  padding: 0 2px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.65em 0;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+}
+ul {
+  margin: 0;
+}
+p, blockquote, ul.simple {
+  margin: 0.75em 0;
+}
+ul, ol, blockquote {
+  padding-left: 40px;
+}
+div.contents {
+  background-color: #eee;
+  float: right;
+  margin: 0 0 10px 10px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-top: 5px solid green;
+}
+div.contents p.topic-title {
+  margin: 0;
+  font-size: 20px;
+  background-color: #ccc;
+  margin: 0 0 10px;
+  padding: 5px 10px;
+}
+div.contents ul.simple {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  min-width: 150px;
+  max-width: 250px;
+}
+div.section#setup h1 {
+  margin-top: 0;
+}
+
+div.attention, div.caution, div.danger, div.error, div.hint,
+div.important, div.note, div.tip, div.warning {
+  margin: 20px;
+  display: block;
+  overflow: auto;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 5px solid green;
+  background-color: #eee;
+}
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title  {
+  background-color: #ccc;
+  padding: 5px 10px;
+  margin: 0px;
+}
+
+div.admonition p.last, div.hint p.last, div.important p.last, div.note p.last, div.tip p.last {
+  padding: 0;
+  margin: 10px;
+}
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: #cc0000;
+}
+
+.highlight {
+  font : 1.3em "DejaVu Sans Mono", sans-serif;
+  display : block;
+  padding : 10px;
+  color : #fff;
+  overflow : auto;
+  margin : 0.5em 1em;
+  width : 90%;
+  border-top-width : 1px;
+  border-right-width : 1px;
+  border-bottom-width : 1px;
+  border-left-width : 1px;
+  border-top-style : solid;
+  border-right-style : solid;
+  border-bottom-style : solid;
+  border-left-style : solid;
+  border-top-color : #3c78b5;
+  border-right-color : #3c78b5;
+  border-bottom-color : #3c78b5;
+  border-left-color : #3c78b5;
+  background : #000;
+}
+
+.highlight .n {
+color : #fff;
+}
+.highlight .c {
+color : #5f5a60;
+font-style : italic;
+}
+.highlight .err {
+/* border : 1px solid #ff0000; */
+border : #ff0000;
+}
+.highlight .o {
+color : #666666;
+}
+.highlight .cm {
+color : #00ff00;
+font-style : italic;
+}
+.highlight .cp {
+color : #00ff00;
+}
+.highlight .c1 {
+color : #8D7A7A;
+}
+.highlight .cs {
+color : #00ff00;
+}
+.highlight .gd {
+color : #a00000;
+}
+.highlight .ge {
+font-style : italic;
+}
+.highlight .gr {
+color : #ff0000;
+}
+.highlight .gh {
+color : #000080;
+}
+.highlight .gi {
+color : #00a000;
+}
+.highlight .go {
+color : #808080;
+}
+.highlight .gp {
+color : #000080;
+}
+.highlight .gs {
+color : #000080;
+}
+.highlight .gu {
+color : #800080;
+}
+.highlight .gt {
+color : #0040d0;
+}
+.highlight .k {
+color : #f9ee98;
+}
+.highlight .kc {
+color : #c0c0ff;
+}
+.highlight .kd {
+color : #c0c0ff;
+}
+.highlight .kp {
+color : #c0c0ff;
+}
+.highlight .kr {
+color : #c0c0ff;
+}
+.highlight .kt {
+color : #c0c0ff;
+}
+.highlight .m {
+color : #cf6a4c;
+}
+.highlight .s {
+color : #bb4444;
+}
+.highlight .na {
+color : #bb4444;
+}
+.highlight .nb {
+color : #aa22ff;
+}
+.highlight .nc {
+color : #7587a6;
+}
+.highlight .no {
+color : #880000;
+}
+.highlight .nd {
+color : #aa22ff;
+}
+.highlight .ni {
+color : #999999;
+}
+.highlight .ne {
+color : #d2413a;
+}
+.highlight .nf {
+color : #8f9d6a;
+}
+.highlight .nl {
+color : #a0a000;
+}
+.highlight .nn {
+color : #c0c0ff;
+font-style : normal;
+}
+.highlight .nt {
+color : #008000;
+}
+.highlight .nv {
+color : #b8860b;
+}
+.highlight .ow {
+color : #aa22ff;
+}
+.highlight .mf {
+color : #666666;
+}
+.highlight .mh {
+color : #666666;
+}
+.highlight .mi {
+color : #cf6a4c;
+}
+.highlight .mo {
+color : #cf6a4c;
+}
+.highlight .sb {
+color : #bb4444;
+}
+.highlight .sc {
+color : #bb4444;
+}
+.highlight .sd {
+color : #bb4444;
+}
+.highlight .s2 {
+color : #bb4444;
+}
+.highlight .se {
+color : #bb6622;
+}
+.highlight .sh {
+color : #bb4444;
+}
+.highlight .si {
+color : #bb6688;
+}
+.highlight .sx {
+color : #008000;
+}
+.highlight .sr {
+color : #bb6688;
+}
+.highlight .s1 {
+color : #bb4444;
+}
+.highlight .ss {
+color : #b8860b;
+}
+.highlight .bp {
+color : #aa22ff;
+}
+.highlight .vc {
+color : #b8860b;
+}
+.highlight .vg {
+color : #b8860b;
+}
+.highlight .vi {
+color : #b8860b;
+}
+.highlight .il {
+color : #666666;
+}
+
+
