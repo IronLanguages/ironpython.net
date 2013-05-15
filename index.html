@@ -1,187 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-
-<html>
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /> 
-  <title>IronPython.net / </title>
-  <link rel="stylesheet" href="css/rst.css" type="text/css" media="screen"
-            charset="utf-8" />
-  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen"
-        charset="utf-8" />
-  <link rel="stylesheet" href="css/lang.css" type="text/css" media="screen"
-        charset="utf-8" />
-  <link rel="stylesheet" href="css/sticky-footer.css" type="text/css" media="screen"
-        charset="utf-8" />
-  
-</head>
-
-<body id="ironpython" class="home columns page">
-
-  <div id="wrap">
-    <div id="main" class="clearfix">
-
-      <div id="nav">
-  <div>
-    <a href='./'  class='active' >Overview</a><a href='download/' >Download</a><a href='tools/' >Tools</a><a href='documentation/' >Documentation</a><a href='support/' >Support</a><a href='http://blog.ironpython.net' >Blog</a>
-  </div>
-</div>
-
-<div id="header">
-  <h1><a href="..">IronPython</a></h1>
-  <h2>
-    the <a target="_blank" class="lang" href="http://python.org">Python</a>
-    programming language for the
-    <a target="_blank" class="dotnet" href="http://microsoft.com/NET">.NET</a>
-    Framework
-  </h2>
-</div>
-
-<!--<div style="border-top: 2px solid #ccc; border-bottom: 2px solid #ccc;">
-  <div style="width: 800px; margin: 0pt auto; position: relative; height: 330px;">
-    <a href="tools/">
-      <span style="letter-spacing: -0.04em; font-size: 4.4em; font-family: gill sans,gill sans mt,Calibri,arial,helvetica,sans-serif; margin: 80px 0pt 0pt 440px; float: right; text-align: left;">
-        IronPython Tools <span style="display: block; font-size: 0.5em; font-style: italic; text-align: center;">for</span>Visual Studio 2010
-      </span>
-      <img width="450" height="309" src="images/ironpython-vstools-450.png" alt="IronPython Tools for Visual Studio 2010" style="position: absolute; left: -10px; top: 10px; border: 0pt none;">
-    </a>
-  </div>
-  <div class="clear"></div>
-</div>-->
-
-<div id="what-is">
-  <p>
-    IronPython is an <a target='_blank' href="http://www.opensource.org/licenses/apache2.0.php">open-source</a> implementation of the Python
-    programming language which is tightly integrated with the
-    .NET Framework. IronPython can use the .NET Framework and
-    Python libraries, and other .NET languages can use
-    Python code just as easily.
-  </p>
-</div>
-
-<div id="get">
-  <ul>
-    <li id='download'>
-      <h3><a href='http://ironpython.codeplex.com/releases/view/81726' target='_blank'>Download Python 2.7.3</a></h3>
-      <p>
-        <a href='download/'>2.7.3 released on 2012-07-06<br />
-        <a href='http://ironpython.codeplex.com/releases/view/81726' target='_blank'>release notes</a> | <a href="https://github.com/IronLanguages/main/zipball/ipy-2.7.3" target='_blank'>source</a>
-      </p>
-    </li>
-    <li id="try">
-      <h3><a href='try/' target="_blank">Try Python <span>in the <u>browser</u></span></a></h3>
-      <p>
-        Quickly run Python code in your
-        browser, without installing IronPython.
-      </p>
-      <a id="console" href="try/">
-        <img src="images/trypythoninbrowser-290x100.png" alt="Try Python in the Browser" />
-      </a>
-    </li>
-    <li id="tutorial">
-      <pre id="code-snippet"><code><img src="images/ironpython-interactive.png" height="279" alt="IronPython Interactive in Visual Studio" /></code></pre>
-      <p>
-        Experience a more interactive .NET and Python development experience with <a href="tools/">Python Tools for Visual Studio</a>.
-      </p>
-    </li>
-    <li class='clear'>&nbsp;</li>
-  </ul>
-</div>
-
-<!--<script type="text/ruby" src="../silverlight/animate.rb"></script>-->
-<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.3.2.js"></script>
-<!--<script type="text/javascript">
-    $(document).ready(function() {
-        $('#code-snippet code').mouseover(function() {
-            $(this).css('width', '350px')
-        }).mouseout(function() {
-            $(this).css('width', '200px')
-        })
-    })
-</script>-->
-
-<div id="body">
-  <div class="section" id="why-iron-language">
-<h1>Why IronPython?</h1>
-<p>IronPython is an excellent addition to the .NET Framework, providing Python
-developers with the power of the .NET framework. Existing .NET developers can
-also use IronPython as a fast and expressive scripting language for embedding,
-testing, or writing a new application from scratch.</p>
-<p>The CLR is a great platform for creating programming languages, and the DLR
-makes it all the better for dynamic languages. Also, the .NET framework
-(base class library, presentation foundation, Silverlight, etc.) gives
-developers an amazing amount of functionality and power.</p>
+---
+layout: home
+class: home columns
+---
+<div class="section" id="why-iron-language">
+    <h1>Why IronPython?</h1>
+    <p>IronPython is an excellent addition to the .NET Framework, providing Python
+    developers with the power of the .NET framework. Existing .NET developers can
+    also use IronPython as a fast and expressive scripting language for embedding,
+    testing, or writing a new application from scratch.</p>
+    <p>The CLR is a great platform for creating programming languages, and the DLR
+    makes it all the better for dynamic languages. Also, the .NET framework
+    (base class library, presentation foundation, Silverlight, etc.) gives
+    developers an amazing amount of functionality and power.</p>
 </div>
 <div class="section" id="announcements">
-<h1>Announcements</h1>
-<div class="strip admonition">
-<p class="first admonition-title">July 6, 2012</p>
-<p><a class="reference external" href="http://ironpython.codeplex.com/releases/view/81726">IronPython 2.7.3</a> is now available!</p>
-<p>This release includes support for the bz2, winsound, and _bisect modules, major improvements
-to the _ast module, improvements in Android support, improvements to pyc.py, and a
-new console that supports history and tab completion on all platforms.</p>
-<p class="last">See <a class="reference external" href="http://blog.ironpython.net/2012/07/whats-new-in-ironpython-273.html">what's new in 2.7.3</a> for more information.</p>
-</div>
-<div class="strip admonition">
-<p class="first admonition-title">March 12, 2012</p>
-<p><strong>Important</strong>: <a class="reference external" href="http://ironpython.codeplex.com/releases/view/74478">IronPython 2.7.2.1</a> was released.</p>
-<p class="last">This release fixes a major issue with method lookups. Upgrading is strongly recommended.</p>
-</div>
-<div class="strip admonition">
-<p class="first admonition-title">March 11, 2012</p>
-<p><a class="reference external" href="http://ironpython.codeplex.com/releases/view/74478">IronPython 2.7.2</a> is now available!</p>
-<p>This release includes the zipimport and sqlite3 modules, the ability for pyc.py to
-generate standalone executables, preliminary support for Android and Windows Phone 7,
-and numerous bug fixes.</p>
-<p class="last"><a class="reference external" href="http://blog.ironpython.net/2012/03/whats-new-in-ironpython-272.html">Visit the blog</a> for more information.</p>
-</div>
-<div class="strip admonition">
-<p class="first admonition-title">December 12, 2011</p>
-<p><strong>Update:</strong> The survey is now closed. Thanks for all of your responses!</p>
-<p>The IronPython team would like to know more about how people are using IronPython
-and how they would like to see it evolve over the next year.</p>
-<p class="last"><a class="reference external" href="http://bit.ly/ipy-2011-survey">Take the 2011 survey</a>!</p>
-</div>
-<div class="strip admonition">
-<p class="first admonition-title">October 21, 2011</p>
-<p><a class="reference external" href="http://ironpython.codeplex.com/releases/view/62475">IronPython 2.7.1</a>
-was released.</p>
-<p class="last">IronPython 2.7.1 includes several new modules (unicodedata, csv, and ast) and
-a large number of bug fixes.</p>
-</div>
-<div class="strip admonition">
-<p class="first admonition-title">March 12, 2011</p>
-<p class="last"><a class="reference external" href="http://ironpython.codeplex.com/releases/view/54498">IronPython 2.7 Final</a>
-was released.</p>
-</div>
-<div class="download col container">
-<a class="reference external" href="announcements/">All IronPython Announcements</a></div>
-</div>
-</div>
-
+    <h1>Announcements</h1>
+    <div class="strip admonition">
+        <p class="first admonition-title">July 6, 2012</p>
+        <p><a class="reference external" href="http://ironpython.codeplex.com/releases/view/81726">IronPython 2.7.3</a> is now available!</p>
+        <p>This release includes support for the bz2, winsound, and _bisect modules, major improvements
+        to the _ast module, improvements in Android support, improvements to pyc.py, and a
+        new console that supports history and tab completion on all platforms.</p>
+        <p class="last">See <a class="reference external" href="http://blog.ironpython.net/2012/07/whats-new-in-ironpython-273.html">what's new in 2.7.3</a> for more information.</p>
     </div>
-  </div>
-
-  <div id="footer">
-    <ul>
-      <li>&copy; <a href='http://github.com/IronLanguages'>IronPython community</a></li>
-      <li id="footer-nav">
-        <a href='./'  class='active' >Overview</a><a href='download/' >Download</a><a href='tools/' >Tools</a><a href='documentation/' >Documentation</a><a href='support/' >Support</a><a href='http://blog.ironpython.net' >Blog</a>
-      </li>
-      <li class="clear">&nbsp;</li>
-    </ul>
-  </div>
-
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-16148811-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-
-</body>
-</html>
+    <div class="strip admonition">
+        <p class="first admonition-title">March 12, 2012</p>
+        <p><strong>Important</strong>: <a class="reference external" href="http://ironpython.codeplex.com/releases/view/74478">IronPython 2.7.2.1</a> was released.</p>
+        <p class="last">This release fixes a major issue with method lookups. Upgrading is strongly recommended.</p>
+    </div>
+    <div class="strip admonition">
+        <p class="first admonition-title">March 11, 2012</p>
+        <p><a class="reference external" href="http://ironpython.codeplex.com/releases/view/74478">IronPython 2.7.2</a> is now available!</p>
+        <p>This release includes the zipimport and sqlite3 modules, the ability for pyc.py to
+        generate standalone executables, preliminary support for Android and Windows Phone 7,
+        and numerous bug fixes.</p>
+        <p class="last"><a class="reference external" href="http://blog.ironpython.net/2012/03/whats-new-in-ironpython-272.html">Visit the blog</a> for more information.</p>
+    </div>
+    <div class="strip admonition">
+        <p class="first admonition-title">December 12, 2011</p>
+        <p><strong>Update:</strong> The survey is now closed. Thanks for all of your responses!</p>
+        <p>The IronPython team would like to know more about how people are using IronPython
+        and how they would like to see it evolve over the next year.</p>
+        <p class="last"><a class="reference external" href="http://bit.ly/ipy-2011-survey">Take the 2011 survey</a>!</p>
+    </div>
+    <div class="strip admonition">
+        <p class="first admonition-title">October 21, 2011</p>
+        <p><a class="reference external" href="http://ironpython.codeplex.com/releases/view/62475">IronPython 2.7.1</a>
+        was released.</p>
+        <p class="last">IronPython 2.7.1 includes several new modules (unicodedata, csv, and ast) and
+        a large number of bug fixes.</p>
+    </div>
+    <div class="strip admonition">
+        <p class="first admonition-title">March 12, 2011</p>
+        <p class="last"><a class="reference external" href="http://ironpython.codeplex.com/releases/view/54498">IronPython 2.7 Final</a>
+        was released.</p>
+    </div>
+    <div class="download col container">
+        <a class="reference external" href="announcements/">All IronPython Announcements</a></div>
+    </div>
+</div>

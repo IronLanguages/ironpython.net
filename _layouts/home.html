@@ -1,0 +1,57 @@
+---
+layout: layout
+---
+<div id="header">
+  <h1><a href="..">IronPython</a></h1>
+  <h2>
+    the <a target="_blank" class="lang" href="httP;//python.org">Python</a>
+    programming language for the
+    <a target="_blank" class="dotnet" href="http://microsoft.com/NET">.NET</a>
+    Framework
+  </h2>
+</div>
+
+<div id="what-is">
+  <p>
+    IronPython is an <a target='_blank' href="http://www.opensource.org/licenses/apache2.0.php">open-source</a> implementation of the Python
+    programming language which is tightly integrated with the
+    .NET Framework. IronPython can use the .NET Framework and
+    Python libraries, and other .NET languages can use
+    Python code just as easily.
+  </p>
+</div>
+
+<div id="get">
+  <ul>
+    <li id='download'>
+      <h3><a href='{{site.stable_release_url}}' target='_blank'>Download Python {{site.stable_version}}</a></h3>
+      <p>
+        <a href='download/'>{{site.stable_release_date}}<br />
+        <a href='{{site.stable_release_notes}}' target='_blank'>release notes</a> | <a href="{{site.stable_release_source}}" target='_blank'>source</a>
+      </p>
+    </li>
+    <li id="try">
+      <h3><a href='try/' target="_blank">Try Python <span>in the <u>browser</u></span></a></h3>
+      <p>
+        Quickly run Python code in your
+        browser, without installing IronPython.
+      </p>
+      <a id="console" href="try/">
+        <img src="../images/trypythoninbrowser-290x100.png" alt="Try Python in the Browser" />
+      </a>
+    </li>
+    <li id="tutorial">
+      <pre id="code-snippet"><code><img src="../images/ironpython-interactive.png" height="279" alt="IronPython Interactive in Visual Studio" /></code></pre>
+      <p>
+        Experience a more interactive .NET and Python development experience with <a href="tools/">Python Tools for Visual Studio</a>.
+      </p>
+    </li>
+    <li class='clear'>&nbsp;</li>
+  </ul>
+</div>
+
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.3.2.js"></script>
+
+<div id="body">
+  {{ content }}
+</div>
