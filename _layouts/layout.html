@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>IronPython.net / {{ page.title }}</title>
+  <link rel="stylesheet" href="{{path_to_css}}/css/rst.css" type="text/css" media="screen"
+            charset="utf-8" />
+  <link rel="stylesheet" href="{{path_to_css}}/css/master.css" type="text/css" media="screen"
+        charset="utf-8" />
+  <link rel="stylesheet" href="{{path_to_css}}/css/lang.css" type="text/css" media="screen"
+        charset="utf-8" />
+  <link rel="stylesheet" href="{{path_to_css}}/css/sticky-footer.css" type="text/css" media="screen"
+        charset="utf-8" />
+</head>
+
+<body id="ironpython" class="{{ page.class }} page">
+
+  <div id="wrap">
+    <div id="main" class="clearfix">
+      <div id="nav">
+        <div>
+          {% include main_nav.html %}
+        </div>
+      </div>
+
+      {{ content }}
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <ul>
+      <li>&copy; <a href='http://github.com/IronLanguages'>IronPython Community</a></li>
+      <li id="footer-nav">
+        {% include main_nav.html %}
+      </li>
+      <li class="clear">&nbsp;</li>
+    </ul>
+  </div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-16148811-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
