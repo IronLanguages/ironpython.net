@@ -1,5 +1,5 @@
-stable_version: 2.7.4
-stable_release_url: http://ironpython.codeplex.com/releases/view/90087
-stable_release_date: 2.7.4 released on 2013-09-07
-stable_release_notes: http://ironpython.codeplex.com/releases/view/90087
-stable_release_source: https://github.com/IronLanguages/main/zipball/ipy-2.7.4
+stable_version: 2.7.5
+stable_release_url: http://ironpython.codeplex.com/releases/view/169382
+stable_release_date: 2.7.5 released on 2014-12-06
+stable_release_notes: http://ironpython.codeplex.com/releases/view/169382
+stable_release_source: https://github.com/IronLanguages/main/zipball/ipy-2.7.5
