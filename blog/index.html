@@ -1,0 +1,34 @@
+---
+layout: page
+class: sub larger blog
+title: Blog
+---
+
+{% for post in paginator.posts %}
+  <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+    <div class="article-head">
+      <h2 class="title"><a href="{{ post.url }}" class="js-pjax">{{ post.title }}</a></h2>
+      <p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
+    </div>
+    <div class="article-content">
+      {{ post.long_description }}
+      <a href="{{ post.url }}" class="full-post-link js-pjax">Read more</a>
+    </div>
+  </article>
+  {% if forloop.last %}{% else %}<div class="separator"></div>{% endif %}
+{% endfor %}
+<br/>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next">Next</span>
+  {% endif %}
+</div>

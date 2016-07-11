@@ -1,0 +1,13 @@
+---
+layout: post
+title: IronPython 2.7.4 Released
+date: '2013-09-07T20:40:00.002-07:00'
+author: jdhardy
+tags:
+- Release Announcements
+modified_time: '2013-09-07T20:40:57.923-07:00'
+blogger_id: tag:blogger.com,1999:blog-9121756179884119374.post-4427159500371165298
+blogger_orig_url: http://blog.ironpython.net/2013/09/ironpython-274-released.html
+---
+
+On behalf of the IronPython team, I'm happy to announce the <a href="https://ironpython.codeplex.com/releases/view/90087">final release of IronPython 2.7.4</a>. This release includes everything from <a href="https://ironpython.codeplex.com/releases/edit/81726">IronPython 2.7.3</a> and earlier. Like all IronPython 2.7-series releases, .NET 4 is required to install it. Installing this release will replace any existing IronPython 2.7-series installation. Assemblies for embedding are provided for .NET 3.5, .NET 4, .NET 4.5, and Silverlight 5.  <br /><br />Improvements in IronPython 2.7.4 are mainly <a href="https://ironpython.codeplex.com/workitem/list/advanced?keyword=&amp;status=Resolved&amp;type=All&amp;priority=All&amp;release=2.7.4&amp;assignedTo=All&amp;component=All&amp;reasonClosed=All&amp;sortField=Votes&amp;sortDirection=Descending&amp;page=0">a collection of bug fixes</a>, many of which are directed at getting <a href="http://ipython.org/">IPython</a> working. The <a href="https://github.com/IronLanguages/main/compare/ipy-2.7.3...ipy-2.7.4">complete list of changes</a> is also available. Specific improvements include: <br /><ul><li>Many fixes to the <code>ast</code> module (thanks to <a href="https://github.com/paweljasinski">Pawel Jasinski</a>)</li><li>A bunch of fixes to locale and tty handling (also courtesy of Pawel) designed to get IPython working.</li><li>.NET 4.5 builds, courtesy of <a href="https://github.com/Alxandr">Aleksander Heintz</a></li><li>Other fixes from <a href="https://github.com/mvanderkolff">Michael van der Kolff</a>, <a href="https://github.com/frasertweedale">Fraser Tweedale</a>, and <a href="https://github.com/WildOgr">Igor (WildOgr)</a></li><li>A bunch of small fixes backported from the master branch</li></ul>Android and Silverlight 4 assemblies have been dropped from this version. The Android assemblies need some more work to be usable with Xamarin.Android, and Silverlight 4 is just plain dead.  <br /><br />For Visual Studio integration, check out&nbsp;<a href="http://pytools.codeplex.com/">Python Tools for Visual Studio</a>&nbsp;which has support for IronPython as well as CPython, and many other fantastic features.  <br /><br />IronPython 2.7.4 is also available for embedding via <a href="http://nuget.org/">NuGet</a>. The main package is <code>IronPython</code>, and the standard library is in <code>IronPython.StdLib</code>. 

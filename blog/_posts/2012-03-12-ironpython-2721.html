@@ -1,0 +1,13 @@
+---
+layout: post
+title: IronPython 2.7.2.1
+date: '2012-03-12T23:44:00.001-07:00'
+author: jdhardy
+tags:
+- Release Announcements
+modified_time: '2012-03-12T23:44:42.769-07:00'
+blogger_id: tag:blogger.com,1999:blog-9121756179884119374.post-4499316984944971992
+blogger_orig_url: http://blog.ironpython.net/2012/03/ironpython-2721.html
+---
+
+<p>There was fairly serious regression introduced between 2.7.2 RC1 and 2.7.2 final – see <a href="http://ironpython.codeplex.com/workitem/32400">issue #32400</a> for details. Upgrading to <a href="http://ironpython.codeplex.com/releases/view/74478">2.7.2.1</a> is highly recommended.</p> <p>On the plus side, this isn’t a dataloss bug, or anything like that, just a “break almost every program in existence” bug. Basically, the code for checking for comparison operators got broken. The motivating example is</p><pre>if sys.version_info &lt; (2, 4):<br />    # do something<br /></pre><br /><p>I’m sure other cases would be broken as well, so I decided to err on the side of caution and update the release as soon as possible. My apologies to everyone who already downloaded 2.7.2 and was impacted by this.</p>  

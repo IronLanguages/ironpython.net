@@ -1,0 +1,12 @@
+---
+layout: post
+title: 'IronPython 2.7.3 Features: the SuperConsole'
+date: '2012-04-29T01:51:00.001-07:00'
+author: jdhardy
+tags: 
+modified_time: '2012-04-29T01:51:58.422-07:00'
+blogger_id: tag:blogger.com,1999:blog-9121756179884119374.post-3664792783427226655
+blogger_orig_url: http://blog.ironpython.net/2012/04/ironpython-273-features-superconsole.html
+---
+
+<p>Internally, IronPython has two implementations of the console: BasicConsole and SuperConsole. The BasicConsole is very simple with no extras, while the SuperConsole has line history and tab completion added. Prior to 2.7.3, the BasicConsole was the default, but starting with 2.7.3 the SuperConsole is the default.</p> <p>The main reason for this is the difference between Windows and Unix systems: on Windows the console provides line history for every application, while on Unix each program has to implement it for itself. In practice, Unix apps use something like <a href="http://www.gnu.org/s/readline/">GNU readline</a> to implement it, but IronPython can’t use a native library.</p> <p>I was all set to write the history code when I discovered that the SuperConsole already had it! It also has tab completion, which the default CPython shell lacks (although the brilliant <a href="http://ipython.org/">IPython</a> does have it). Once you get used to having tab completion in the shell, it’s really hard to go back.</p> <p>The SuperConsole has been tested on multiple platforms and seems to work just fine, but if you have any issues you can switch back to the BasicConsole by passing <tt>-X:BasicConsole</tt> to ipy.exe. Also, please <a href="http://ironpython.codeplex.com/WorkItem/Create">create an issue</a> if you have any difficulty with the new console.</p>  

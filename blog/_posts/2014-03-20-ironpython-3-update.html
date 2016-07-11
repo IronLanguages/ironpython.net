@@ -1,0 +1,13 @@
+---
+layout: post
+title: IronPython 3 Update
+date: '2014-03-20T17:02:00.001-07:00'
+author: jdhardy
+tags:
+- IronPython 3
+modified_time: '2014-03-20T17:02:43.636-07:00'
+blogger_id: tag:blogger.com,1999:blog-9121756179884119374.post-8860240839504984146
+blogger_orig_url: http://blog.ironpython.net/2014/03/ironpython-3-update.html
+---
+
+<p>I know a lot of people are interested in IronPython 3, so I'm going to provide an idea of where things are right now and where they are headed.  <p>First off, IronPython 3 development will take place in <a href="https://github.com/IronLanguages/ironpython3">a new repository</a> to break from the old repo that was converted from Microsoft's internal TFS. It is not up-to-date with the old repo and I probably won't sync them until after 2.7.5 is released. Doing so while preserving committers should be possible but I haven't tried yet. One side effect of the repo split is that the history is also split; preserving it in a sane way was not really possible.  <p>The <a href="https://github.com/IronLanguages/ironpython3/blob/master/README.md">README</a> has the necessary instructions to get started (finally!).</p> <p>There is also a new test runner based on <a href="http://nunitlite.com/">NUnitLite</a>; you can run the tests by running <tt>make test</tt> from a command prompt. I haven't tested it on Mono yet but it should work there as well. The Makefile needs to be updated to include testing.</p> <p>The Python 3 standard library has been imported; it doesn't really work because it uses Python 3 features, but that should provide some prioritization (the new metaclass syntax is pretty critical now, because io.py uses it). All of the old IronPython tests are there as well, although many will have to be updated (or removed, if they're redundant with CPython tests) for Python 3.  <p>I'm going to add the needed PEPs to the issues list for the new repo so that anyone interested can claim them.</p> <p>The new repo structure should make working on IronPython much easier than before, which will hopefully encourage more people to contribute. It also make it easier to push stdlib changes back upstream to reduce the maintenance load.  <p>As always, I'm happy to answer any questions.</p>  

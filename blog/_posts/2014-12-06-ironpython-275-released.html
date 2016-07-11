@@ -1,0 +1,13 @@
+---
+layout: post
+title: IronPython 2.7.5 Released
+date: '2014-12-06T14:03:00.001-08:00'
+author: jdhardy
+tags:
+- Release Announcements
+modified_time: '2014-12-06T14:03:16.631-08:00'
+blogger_id: tag:blogger.com,1999:blog-9121756179884119374.post-430847013819679418
+blogger_orig_url: http://blog.ironpython.net/2014/12/ironpython-275-released.html
+---
+
+<p>On behalf of the IronPython team, I'm very happy to announce the release <a href="https://ironpython.codeplex.com/releases/view/169382" target="_blank">IronPython 2.7.5</a>. Like all IronPython 2.7-series releases, .NET 4 is required to install it. Installing this release will replace any existing IronPython 2.7-series installation. Assemblies for embedding are provided for .NET 3.5, .NET 4, .NET 4.5, and Silverlight 5.  <p>IronPython 2.7.5 is primarily <a href="http://bit.ly/ipy275fixed">a collection of bug fixes</a> which smooths off many of the remaining rough edges. The <a href="https://github.com/IronLanguages/main/compare/ipy-2.7.4...ipy-2.7.5">complete list of changes</a> is also available.  <p>A major new feature is the inclusion of <code>ensurepip</code>, which will install the <code>pip</code> package manager:<pre><code>; -X:Frames is required when using pip<br />ipy.exe -X:Frames -m ensurepip<br /><br />; Run from an Administrator console if using IronPython installer<br />ipy.exe -X:Frames -m pip install html5lib<br /></code></pre><br /><p><strong>Note:</strong> <em>The assembly version of IronPython has changed to 2.7.5.0.</em> All previous 2.7 versions had the same version (2.7.0.40) which caused issues when different versions were installed. Publisher policy files are used to so that applications don't have to be recompiled, but recompiling is strongly recommended. <br /><p>A huge thanks goes out to <a href="https://github.com/paweljasinski">Pawel Jasinski</a>, who contributed most of the changes in this release. Thanks is also due to <a href="https://github.com/sopelt">Simon Opelt</a>, <a href="https://github.com/slide">Alex Earl</a>, <a href="https://github.com/jbester">Jeffrey Bester</a>, <a href="https://github.com/yYHernan">yngipy hernan</a>, <a href="https://github.com/akoeplinger">Alexander Köplinger</a>,<a href="https://github.com/vincentducros">Vincent Ducros</a>, and <a href="https://github.com/fdanny">fdanny</a>. <br /><p>For Visual Studio integration, check out <a href="http://pytools.codeplex.com/">Python Tools for Visual Studio</a> which has support for IronPython as well as CPython, and many other fantastic features. <br /><p>IronPython 2.7.5 is also available for embedding via <a href="http://nuget.org/">NuGet</a>. The main package is <code>IronPython</code>, and the standard library is in <code>IronPython.StdLib</code>.</p>  

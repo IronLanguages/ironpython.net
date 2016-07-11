@@ -1,0 +1,13 @@
+---
+layout: post
+title: Pip in IronPython 2.7.5
+date: '2014-12-07T00:00:00.000-08:00'
+author: jdhardy
+tags:
+- Release Notes
+modified_time: '2014-12-07T00:00:08.968-08:00'
+blogger_id: tag:blogger.com,1999:blog-9121756179884119374.post-5443892583000411313
+blogger_orig_url: http://blog.ironpython.net/2014/12/pip-in-ironpython-275.html
+---
+
+<p>With IronPython 2.7.5 finally released, one of the most useful features is finally widely available – <a href="https://pypi.python.org/pypi/pip" target="_blank">pip</a> support.</p> <p>Installing pip is done with a backport of the <tt>ensurepip</tt> module:</p><pre><code>ipy -X:Frames -m ensurepip</code></pre><br /><p>Note that <tt>–X:Frames</tt> is always required when working with pip. If using an installed IronPython that should be run from an Administrator command prompt (or using <tt>install -user</tt>). Using a regular command prompt will probably result in errors.</p><br /><p>To install packages:</p><pre><code>ipy -X:Frames -m pip install html5lib</code></pre><br /><p>Unfortunately <tt>pip</tt> <a href="https://ironpython.codeplex.com/workitem/35733" target="_blank">does not work</a>, so the longer version has to be used instead.</p><br /><p>There is no gaurantee that all libraries will install or run successfully, but many popular ones (like html5lib) do.</p>  
