@@ -786,7 +786,8 @@ indexer above can also be accessed using the non-default format as such:</p>
 <pre class="literal-block">&gt;&gt;&gt; ba.Item[0]
 False
 </pre>
-<!-- BitArray.Item.GetValue(ba, 0) does not currently work because of
+<!-- BitArray.Item.GetValue(ba, 0) does not currently work because of
+
 http://ironpython.codeplex.com/WorkItem/View.aspx?WorkItemId=23975 -->
 </div>
 </div>
@@ -2239,15 +2240,11 @@ does not do any sand-boxing. All scripts execute with the permissions of
 the user. As a result, running Python code downloaded from the Internet
 for example could be potentially be dangerous.</p>
 <p>However, ipy.exe is just one manifiestation of IronPython. IronPython can
-also be used in other scenarios like in Silverlight or embedded in an
+also be used in other scenarios like embedded in an
 application. All the IronPython assemblies are <a class="reference external" href="http://msdn.microsoft.com/en-us/library/bb397858.aspx">security-transparent</a>.
 As a result, IronPython code can be run in a sand-box and the host
 can control the security priviledges to be granted to the Python code.
-This is one of the benefits of IronPython building on top of .NET. For example,
-when running in a web browser via the Silverlight plugin, Python code will not
-be able to write to the file system or make network connections to hosts
-other than the host where the web page orginites from. This security
-is enforced at the .NET level itself, and hence is very secure.</p>
+This is one of the benefits of IronPython building on top of .NET. </p>
 </div>
 <div class="section" id="execution-model-and-call-frames">
 <h2><a class="toc-backref" href="#id105">Execution model and call frames</a></h2>
@@ -2256,7 +2253,7 @@ is enforced at the .NET level itself, and hence is very secure.</p>
 <li>Interpretation</li>
 <li>Compiling on the fly using DynamicMethod</li>
 <li>Compiling on the fly using DynamicMethod</li>
-<li>Ahead-of-time compilation to an assembly on disk using the pyc sample</li>
+<li>Ahead-of-time compilation to an assembly on disk using ipyc</li>
 <li>A combination of the above - ie. a method might initially be interpreted,
 and can later be compiled once it has been called a number of times.</li>
 </ol>
