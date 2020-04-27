@@ -1,8 +1,8 @@
-stable_version: 2.7.9
-stable_release_url: https://github.com/IronLanguages/ironpython2/releases/tag/ipy-2.7.9
-stable_release_date: 2.7.9 released on 2018-10-09
-stable_release_notes: https://github.com/IronLanguages/ironpython2/releases/tag/ipy-2.7.9
-stable_release_source: https://github.com/IronLanguages/ironpython2/archive/ipy-2.7.9.zip
+stable_version: 2.7.10
+stable_release_url: https://github.com/IronLanguages/ironpython2/releases/tag/ipy-2.7.10
+stable_release_date: 2.7.10 released on 2020-04-27
+stable_release_notes: https://github.com/IronLanguages/ironpython2/releases/tag/ipy-2.7.10
+stable_release_source: https://github.com/IronLanguages/ironpython2/archive/ipy-2.7.10.zip
 
 paginate: 10
 paginate_path: "/blog/page:num/"
