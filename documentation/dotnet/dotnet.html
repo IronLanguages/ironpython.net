@@ -192,12 +192,8 @@ but IronPython will not be aware of these.</p>
 </div>
 <div class="section" id="assemblies-loaded-by-default">
 <h2><a class="toc-backref" href="#id32">Assemblies loaded by default</a></h2>
-<p>When you use <cite>ipy.exe</cite>, mscorlib.dll and System.dll are automatically loaded.
-This enables you to start using these assemblies (which IronPython itself is
-dependent on) without having to call <cite>clr.AddReference-mehthods</cite>.</p>
-<p>In a Silverlight application, <strong>TODO</strong> ...</p>
-<p>When IronPython code is embedded in an application, the application controls
-which assemblies are loaded by default.</p>
+<p>By default, core assemblies (<cite>mscorlib.dll</cite> and <cite>System.dll</cite> on .NET Framework / <cite>System.Private.CoreLib.dll</cite> on .NET Core) are automatically loaded by the DLR.
+This enables you to start using these assemblies (which IronPython itself is dependent on) without having to call <cite>clr.AddReference-methods</cite>.</p>
 </div>
 </div>
 <div class="section" id="using-net-types">
