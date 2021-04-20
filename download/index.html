@@ -10,6 +10,12 @@ title: Download
     <div class="download col container">
         <a class="reference external" href="{{site.stable_release_url}}">Download IronPython {{site.stable_version}}</a>
     </div>
+    <h1>Preview versions</h1>
+    <p>The latest preview version of IronPython is <a class="reference external" href="{{site.preview_release_url}}">IronPython {{site.preview_version}}</a>, which is
+    compatible with <a class="reference external" href="https://www.python.org/downloads/release/python-340/">Python 3.4</a>.</p>
+    <div class="download col container">
+        <a class="reference external" href="{{site.preview_release_url}}">Download IronPython {{site.preview_version}}</a>
+    </div>
     
     <h2>NuGet Package</h2>
     <p><a href="https://www.nuget.org/packages/IronPython">IronPython</a> is also available as a NuGet package. The standard library is a separate package. This is the recomended way to get IronPython if you are embedding it in another program.</p>
@@ -31,31 +37,13 @@ title: Download
     <h1>Prerequisites</h1>
     <p>IronPython is a cross-platform programming language,
     so prerequisites will vary based on usage.</p>
-    <p>Here are the recommended runtimes are for each platform:</p>
-    <div class="section" id="windows-desktop-server-apps">
-        <h2>Windows desktop &amp; server apps</h2>
-        <div class="strip container">
-            <p>On Windows for desktop and server usage, the .NET framework is the
-            recommended runtime.</p>
-            <div class="download container">
-                <a class="reference external" href="https://www.microsoft.com/en-us/download/details.aspx?id=30653">Latest .NET version (4.5)</a>
-            </div>
-            <div class="note">
-                <p class="first admonition-title">Note</p>
-                <div class="last line-block">
-                    <div class="line">IronPython also runs on .NET Core 2.0 and 2.1.</div>
-                </div>
-            </div>
+    <div class="strip container">
+        <p>For cross-platform solutions, we support the .NET Core, .NET and Mono runtimes. For Windows-only solutions, the recommended runtime is the .NET Framework.</p>
+        <div class="download col container">
+            <a class="reference external" href="https://dotnet.microsoft.com/">Download .NET</a>
         </div>
-    </div>
-    <div class="section" id="mac-os-linux-desktop-server-apps">
-        <h2>Mac OS &amp; Linux desktop &amp; server apps</h2>
-        <div class="strip container">
-        <p>IronPython runs on
-        <a class="reference external" href="https://www.mono-project.com">Mono</a>, a cross platform, open source .NET framework,
-        enables IronPython to be used on Linux, Mac OS, and BSD systems.</p>
-        <div class="download container">
-            <a class="reference external" href="https://www.mono-project.com">Mono</a>
+        <div class="download col container">
+            <a class="reference external" href="https://www.mono-project.com">Download Mono</a>
         </div>
     </div>
 </div>

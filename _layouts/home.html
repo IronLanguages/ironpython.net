@@ -5,31 +5,36 @@ layout: layout
   <h1><a href="..">IronPython</a></h1>
   <h2>
     the <a target="_blank" class="lang" href="https://python.org">Python</a>
-    programming language for the
-    <a target="_blank" class="dotnet" href="https://microsoft.com/NET">.NET</a>
-    Framework
+    programming language for <a target="_blank" class="dotnet" href="https://dotnet.microsoft.com/">.NET</a>
   </h2>
 </div>
 
 <div id="what-is">
   <p>
     IronPython is an <a target='_blank' href="http://www.opensource.org/licenses/apache2.0.php">open-source</a> implementation of the Python
-    programming language which is tightly integrated with the
-    .NET Framework. IronPython can use the .NET Framework and
-    Python libraries, and other .NET languages can use
-    Python code just as easily.
+    programming language which is tightly integrated with .NET.
+    IronPython can use .NET and Python libraries, and other .NET
+    languages can use Python code just as easily.
   </p>
 </div>
 
 <div id="get">
   <ul>
     <li id='download'>
-      <h3><a href='{{site.stable_release_url}}' target='_blank'>Download IronPython {{site.stable_version}}</a></h3>
+      <h3><a href='{{site.stable_release_url}}' target='_blank'><br/>{{site.stable_version_minor}}</a></h3>
       <p>
         <a href='download/'>{{site.stable_release_date}}<br />
         <a href='{{site.stable_release_notes}}' target='_blank'>release notes</a> | <a href="{{site.stable_release_source}}" target='_blank'>source</a>
       </p>
     </li>
+    <li id='download'>
+      <h3><a href='{{site.preview_release_url}}' target='_blank'><br/>{{site.preview_version_minor}}</a></h3>
+      <p>
+        <a href='download/'>{{site.preview_release_date}}<br />
+        <a href='{{site.preview_release_notes}}' target='_blank'>release notes</a> | <a href="{{site.preview_release_source}}" target='_blank'>source</a>
+      </p>
+    </li>
+    <!--
     <li id="try">
       <h3><a href='https://pyfiddle.io/' target="_blank">Try Python <span>in the <u>browser</u></span></a></h3>
       <p>
@@ -40,6 +45,7 @@ layout: layout
         <img src="../images/trypythoninbrowser-290x100.png" alt="Try Python in the Browser" />
       </a>
     </li>
+    -->
     <li id="tutorial">
       <pre id="code-snippet"><code><img src="../images/ironpython-interactive.png" height="279" alt="IronPython Interactive in Visual Studio" /></code></pre>
       <p>

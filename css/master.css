@@ -112,7 +112,7 @@ a:hover {
   position: absolute;
   top: -42px;
   margin: 0;
-  width: 202px;
+  width: 302px;
   height: 50px;
 }
 .page #header h1 a {
@@ -137,7 +137,7 @@ a:hover {
   top: 0;
 }
 .home.page #header h1 a {
-  width: 383px;
+  width: 483px;
   height: 95px;
 }
 
@@ -162,7 +162,7 @@ a:hover {
 }
 .home.page #header h2 {
   font-size: 29px;
-  margin-left: 403px;
+  margin-left: 503px;
   padding: 21px 0 7px;
   text-align: left;
 }
@@ -177,8 +177,8 @@ a:hover {
 }
 a.download_link {
   margin: 0 auto;
-  display: block;
-  width: 180px;
+  display: inline-block;
+  width: 185px;
 
   padding: 10px 75px 10px 10px;
 
@@ -259,16 +259,19 @@ a.download_link:hover {
   position: relative;
   left: 26px;
   display: block;
-  text-indent: -100000px;
   background-color: transparent;
   width: 163px;
   height: 162px;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 .home.page #get #download p {
   text-align: center;
   margin: 0;
 }
-
 
 /* try *lang* in the browser */
 
@@ -321,7 +324,7 @@ a.download_link:hover {
 
 .home.page #get #tutorial {
   background-image: url("../images/code-snippet-bg.png");
-  float: left;
+  float: right;
   height: 270px;
   list-style: none;
   margin-left: 10px;
