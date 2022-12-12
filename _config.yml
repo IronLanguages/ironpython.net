@@ -5,6 +5,13 @@ stable_release_date: 2.7.12 released on 2022-01-21
 stable_release_notes: https://github.com/IronLanguages/ironpython2/releases/tag/ipy-2.7.12
 stable_release_source: https://github.com/IronLanguages/ironpython2/archive/ipy-2.7.12.zip
 
+stable3_version: 3.4.0
+stable3_version_minor: 3.4
+stable3_release_url: https://github.com/IronLanguages/ironpython3/releases/tag/v3.4.0
+stable3_release_date: 3.4.0 released on 2022-12-12
+stable3_release_notes: https://github.com/IronLanguages/ironpython3/releases/tag/v3.4.0
+stable3_release_source: https://github.com/IronLanguages/ironpython3/archive/v3.4.0.zip
+
 preview_version: 3.4.0-beta1
 preview_version_minor: 3.4
 preview_release_url: https://github.com/IronLanguages/ironpython3/releases/tag/v3.4.0-beta1
